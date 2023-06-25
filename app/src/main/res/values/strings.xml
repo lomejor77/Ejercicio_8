@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ejercicio4</string>
+    <string name="imageview">imageView</string>
+    <string name="primer_numero">Primer Numero</string>
+    <string name="segundo_numero">Segundo Numero</string>
+    <string name="suma">SUMA</string>
+    <string name="resta">RESTA</string>
+    <string name="divide">DIVIDE</string>
+    <string name="multiplica">MULTIPLICA</string>
+</resources>
