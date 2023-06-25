@@ -26,18 +26,39 @@ public class MainActivity extends AppCompatActivity {
         suma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (nUno.getText().toString().isBlank()) {
+                    Toast.makeText(getBaseContext(), "Falta algun valor", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (nDos.getText().toString().isBlank()) {
+                    Toast.makeText(getBaseContext(), "Falta algun valor", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 Integer uno = Integer.parseInt(nUno.getText().toString());
                 Integer dos = Integer.parseInt(nDos.getText().toString());
 
-                Integer suma = uno + dos;
+                Integer sumar = uno + dos;
 
-                Toast.makeText(getBaseContext(), "Resultado: "+ suma, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Resultado: "+ sumar, Toast.LENGTH_SHORT).show();
             }
         });
 
         resta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (nUno.getText().toString().isBlank()) {
+                    Toast.makeText(getBaseContext(), "Falta algun valor", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (nDos.getText().toString().isBlank()) {
+                    Toast.makeText(getBaseContext(), "Falta algun valor", Toast.LENGTH_LONG).show();
+                    return;
+                }
+                Integer uno = Integer.parseInt(nUno.getText().toString());
+                Integer dos = Integer.parseInt(nDos.getText().toString());
+
+                Integer restar = uno - dos;
+
+                Toast.makeText(getBaseContext(), "Resultado: "+ restar, Toast.LENGTH_LONG).show();
 
             }
         });
@@ -45,6 +66,20 @@ public class MainActivity extends AppCompatActivity {
         multiplica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (nUno.getText().toString().isBlank()) {
+                    Toast.makeText(getBaseContext(), "Falta algun valor", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (nDos.getText().toString().isBlank()) {
+                    Toast.makeText(getBaseContext(), "Falta algun valor", Toast.LENGTH_LONG).show();
+                    return;
+                }
+                Integer uno = Integer.parseInt(nUno.getText().toString());
+                Integer dos = Integer.parseInt(nDos.getText().toString());
+
+                Integer multiplicar = uno * dos;
+
+                Toast.makeText(getBaseContext(), "Resultado: "+ multiplicar, Toast.LENGTH_LONG).show();
+
 
             }
         });
@@ -52,6 +87,19 @@ public class MainActivity extends AppCompatActivity {
         divide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (nUno.getText().toString().isBlank()) {
+                    Toast.makeText(getBaseContext(), "Falta algun valor", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (nDos.getText().toString().isBlank()) {
+                    Toast.makeText(getBaseContext(), "Falta algun valor", Toast.LENGTH_LONG).show();
+                    return;
+                }
+                Integer uno = Integer.parseInt(nUno.getText().toString());
+                Integer dos = Integer.parseInt(nDos.getText().toString());
+
+                Integer dividir = uno / dos;
+
+                Toast.makeText(getBaseContext(), "Resultado: "+ dividir, Toast.LENGTH_LONG).show();
 
             }
         });
